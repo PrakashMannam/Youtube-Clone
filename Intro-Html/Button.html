@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .card {
+      width: 250px;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: white;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 1rem;
+      transition: transform 0.4s ease;
+    }
+
+    .card img:hover {
+      transform: scale(1.1);
+    }
+
+    .card h2 {
+      margin: 10px 0;
+    }
+
+    .price {
+      color: rgb(0, 118, 0);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    #Cart-Button, #Buy-Button {
+      height: 36px;
+      width: 100px;
+      border-radius: 2rem;
+      cursor: pointer;
+      border: solid 1px;
+      margin: 0.5rem;
+    }
+
+    #Cart-Button {
+      background-color: rgb(255, 216, 20);
+    }
+
+    #Cart-Button:hover {
+      background-color: rgb(240, 214, 86);
+      opacity: 0.8;
+      text-decoration: underline;
+      box-shadow: 0.5px 0.5px 1px black;
+    }
+
+    #Buy-Button {
+      background-color: rgb(255, 164, 28);
+    }
+
+    #Buy-Button:hover {
+      background-color: rgb(250, 140, 10);
+      opacity: 0.8;
+      text-decoration: underline;
+      box-shadow: 0.5px 0.5px 1px black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://m.media-amazon.com/images/I/71yzJoE7WlL._SX679_.jpg" alt="iPhone">
+    <h2>Apple iPhone 15</h2>
+    <p class="price">$999</p>
+    <p>Latest model with A17 Bionic chip and great performance.</p>
+    <button id="Cart-Button">Add to Cart</button>
+    <button id="Buy-Button">Buy Now</button>
+  </div>
+
+</body>
+</html>
